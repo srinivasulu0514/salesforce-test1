@@ -6,7 +6,7 @@
             <name>While_country_equals_to_India_send_notifications_to_respective_customers</name>
             <type>Alert</type>
         </actions>
-        <active>true</active>
+        <active>false</active>
         <criteriaItems>
             <field>Account.BillingCountry</field>
             <operation>equals</operation>
