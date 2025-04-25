@@ -5,7 +5,7 @@
         <fullName>Open - Not Contacted</fullName>
         <default>false</default>
         <label>Open - Not Contacted</label>
-        <converted>false</converted>
+        <converted>False</converted>
     </standardValue>
     <standardValue>
         <fullName>Working - Contacted</fullName>
