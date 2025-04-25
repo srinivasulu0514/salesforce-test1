@@ -3,7 +3,7 @@
     <labels>
         <fullName>country</fullName>
         <language>en_US</language>
-        <protected>true</protected>
+        <protected>false</protected>
         <shortDescription>country</shortDescription>
         <value>Country-India</value>
     </labels>
