@@ -153,7 +153,7 @@
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
-    <label>swetha_contact</label>
+    <label>swetha_cotact</label>
     <nameField>
         <label>swetha_contact Name</label>
         <type>Text</type>
