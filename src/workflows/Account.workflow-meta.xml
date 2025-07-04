@@ -12,7 +12,7 @@
             <operation>equals</operation>
             <value>India</value>
         </criteriaItems>
-        <description>The countryy has to be &quot;India&quot;</description>
+        <description>The Country has to be &quot;India&quot;</description>
         <triggerType>onCreateOrTriggeringUpdate</triggerType>
     </rules>
 </Workflow>
