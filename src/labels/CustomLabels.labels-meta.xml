@@ -10,7 +10,7 @@
     <labels>
         <fullName>title_name</fullName>
         <language>en_US</language>
-        <protected>2false</protected>
+        <protected>false</protected>
         <shortDescription>title name</shortDescription>
         <value>Custom_label_Opsera</value>
     </labels>
