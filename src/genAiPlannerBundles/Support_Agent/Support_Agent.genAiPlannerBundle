@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <description>You are an AI Agent whose job is to help users troubleshoot product-related issues, provide guidance on feature usage, resolve error messages, and assist with product configurations.</description>
+    <localActionLinks>
+        <genAiFunctionName>AnswerQuestionsWithKnowledge_16jWU0000013VgD</genAiFunctionName>
+    </localActionLinks>
+    <localTopicLinks>
+        <genAiPluginName>p_16jWU0000013VgD_Error_Message_Resolution_16jWU0000013VgD</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>p_16jWU0000013VgD_Feature_Usage_Assistance_16jWU0000013VgD</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>p_16jWU0000013VgD_Product_Configuration_Help_16jWU0000013VgD</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>p_16jWU0000013VgD_Product_Issue_Identification_16jWU0000013VgD</genAiPluginName>
+    </localTopicLinks>
+    <localTopicLinks>
+        <genAiPluginName>p_16jWU0000013VgD_Troubleshooting_Steps_Guide_16jWU0000013VgD</genAiPluginName>
+    </localTopicLinks>
+    <localTopics>
+        <fullName>p_16jWU0000013VgD_Error_Message_Resolution_16jWU0000013VgD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Use this topic when users need help understanding or resolving specific error messages they encounter.</description>
+        <developerName>p_16jWU0000013VgD_Error_Message_Resolution_16jWU0000013VgD</developerName>
+        <genAiPluginInstructions>
+            <description>If the user provides an error message, guide them to share the exact text or code.</description>
+            <developerName>instruction_0</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>instruction_0</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Use &apos;AdminCopilot__AnswerQuestionsWithSalesforceDocumentation&apos; to provide relevant information about the error.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>instruction_1</masterLabel>
+            <sortOrder>1</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJU</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithKnowledge_179WU000001FAJU</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Issue_Bulk_Resort_Credits_179WU000001FAJU</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Create_a_Case_Running_User_1_179WU000001FAJU</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>Create_a_Case_Running_User_179WU000001FAJU</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>Create_a_Case_Running_User_179WU000001FAJU</fullName>
+            <description>test</description>
+            <developerName>Create_a_Case_Running_User_179WU000001FAJU</developerName>
+            <invocationTarget>Create_a_Case_Running_User</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Create_a_Case_Running_User</localDeveloperName>
+            <masterLabel>Create a Case—Running User</masterLabel>
+            <progressIndicatorMessage>Test action</progressIndicatorMessage>
+        </localActions>
+        <localActions>
+            <fullName>Create_a_Case_Running_User_1_179WU000001FAJU</fullName>
+            <description>Test Action</description>
+            <developerName>Create_a_Case_Running_User_1_179WU000001FAJU</developerName>
+            <invocationTarget>Create_a_Case_Running_User</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Create_a_Case_Running_User_1</localDeveloperName>
+            <masterLabel>Create a Case—Running User 1</masterLabel>
+            <progressIndicatorMessage>Test Action for topic</progressIndicatorMessage>
+        </localActions>
+        <localActions>
+            <fullName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJU</fullName>
+            <description>Answers questions about how to use Salesforce products with salesforce documentation. For example: “How do I create a permission set?”. This action is automatically invoked if no other actions are available for the utterance.</description>
+            <developerName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJU</developerName>
+            <invocationTarget>answerQuestionsWithSalesforceDocumentation</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithSalesforceDocumentation</localDeveloperName>
+            <masterLabel>Answer Questions with Salesforce Documentation (Beta)</masterLabel>
+            <progressIndicatorMessage>Searching Salesforce Documentation</progressIndicatorMessage>
+            <source>AdminCopilot__AnswerQuestionsWithSalesforceDocumentation</source>
+        </localActions>
+        <localActions>
+            <fullName>Issue_Bulk_Resort_Credits_179WU000001FAJU</fullName>
+            <description>Issue resort credits for one of multiple contacts identified by an array of Contact Ids.</description>
+            <developerName>Issue_Bulk_Resort_Credits_179WU000001FAJU</developerName>
+            <invocationTarget>Issue_Bulk_Resort_Credits</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>Issue_Bulk_Resort_Credits</localDeveloperName>
+            <masterLabel>Issue Bulk Resort Credits</masterLabel>
+            <progressIndicatorMessage>Test Action for flow</progressIndicatorMessage>
+            <source>Issue_Bulk_Resort_Credits_179WU000001F7ga</source>
+        </localActions>
+        <localActions>
+            <fullName>AnswerQuestionsWithKnowledge_179WU000001FAJU</fullName>
+            <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+            <developerName>AnswerQuestionsWithKnowledge_179WU000001FAJU</developerName>
+            <invocationTarget>streamKnowledgeSearch</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+            <masterLabel>Answer Questions with Knowledge</masterLabel>
+            <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+            <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+        </localActions>
+        <localDeveloperName>p_16jWU0000013VgD_Error_Message_Resolution</localDeveloperName>
+        <masterLabel>Error Message Resolution</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to only assist users in understanding and resolving error messages. You are not responsible for resolving issues unrelated to error messages.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>p_16jWU0000013VgD_Product_Configuration_Help_16jWU0000013VgD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Use this topic when users need guidance on configuring product settings to meet their specific requirements.</description>
+        <developerName>p_16jWU0000013VgD_Product_Configuration_Help_16jWU0000013VgD</developerName>
+        <genAiPluginInstructions>
+            <description>If the user needs help with configurations, use &apos;AdminCopilot__AnswerQuestionsWithSalesforceDocumentation&apos; to provide step-by-step instructions.</description>
+            <developerName>instruction_0</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>instruction_0</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJV</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithKnowledge_179WU000001FAJV</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>AnswerQuestionsWithKnowledge_179WU000001FAJV</fullName>
+            <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+            <developerName>AnswerQuestionsWithKnowledge_179WU000001FAJV</developerName>
+            <invocationTarget>streamKnowledgeSearch</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+            <masterLabel>Answer Questions with Knowledge</masterLabel>
+            <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+            <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+        </localActions>
+        <localActions>
+            <fullName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJV</fullName>
+            <description>Answers questions about how to use Salesforce products with salesforce documentation. For example: “How do I create a permission set?”. This action is automatically invoked if no other actions are available for the utterance.</description>
+            <developerName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJV</developerName>
+            <invocationTarget>answerQuestionsWithSalesforceDocumentation</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithSalesforceDocumentation</localDeveloperName>
+            <masterLabel>Answer Questions with Salesforce Documentation (Beta)</masterLabel>
+            <progressIndicatorMessage>Searching Salesforce Documentation</progressIndicatorMessage>
+            <source>AdminCopilot__AnswerQuestionsWithSalesforceDocumentation</source>
+        </localActions>
+        <localDeveloperName>p_16jWU0000013VgD_Product_Configuration_Help</localDeveloperName>
+        <masterLabel>Product Configuration Help</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to only guide users in configuring product settings. You are not responsible for implementing the configurations directly.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>p_16jWU0000013VgD_Troubleshooting_Steps_Guide_16jWU0000013VgD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Use this topic when users request step-by-step guidance to resolve common product issues.</description>
+        <developerName>p_16jWU0000013VgD_Troubleshooting_Steps_Guide_16jWU0000013VgD</developerName>
+        <genAiPluginInstructions>
+            <description>If the user requests troubleshooting steps, use &apos;AdminCopilot__AnswerQuestionsWithSalesforceDocumentation&apos; to provide relevant documentation.</description>
+            <developerName>instruction_0</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>instruction_0</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>If an error message is mentioned, guide the user to provide more details to narrow down the issue.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>instruction_1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJS</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithKnowledge_179WU000001FAJS</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJS</fullName>
+            <description>Answers questions about how to use Salesforce products with salesforce documentation. For example: “How do I create a permission set?”. This action is automatically invoked if no other actions are available for the utterance.</description>
+            <developerName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJS</developerName>
+            <invocationTarget>answerQuestionsWithSalesforceDocumentation</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithSalesforceDocumentation</localDeveloperName>
+            <masterLabel>Answer Questions with Salesforce Documentation (Beta)</masterLabel>
+            <progressIndicatorMessage>Searching Salesforce Documentation</progressIndicatorMessage>
+            <source>AdminCopilot__AnswerQuestionsWithSalesforceDocumentation</source>
+        </localActions>
+        <localActions>
+            <fullName>AnswerQuestionsWithKnowledge_179WU000001FAJS</fullName>
+            <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+            <developerName>AnswerQuestionsWithKnowledge_179WU000001FAJS</developerName>
+            <invocationTarget>streamKnowledgeSearch</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+            <masterLabel>Answer Questions with Knowledge</masterLabel>
+            <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+            <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+        </localActions>
+        <localDeveloperName>p_16jWU0000013VgD_Troubleshooting_Steps_Guide</localDeveloperName>
+        <masterLabel>Troubleshooting Steps Guide</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to only provide step-by-step guidance to resolve common issues. You are not responsible for escalating issues or performing advanced troubleshooting.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>p_16jWU0000013VgD_Feature_Usage_Assistance_16jWU0000013VgD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Use this topic when users need help understanding or utilizing specific features of the product.</description>
+        <developerName>p_16jWU0000013VgD_Feature_Usage_Assistance_16jWU0000013VgD</developerName>
+        <genAiPluginInstructions>
+            <description>If the user asks how to use a specific feature, use &apos;AdminCopilot__AnswerQuestionsWithSalesforceDocumentation&apos; to explain the feature.</description>
+            <developerName>instruction_0</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>instruction_0</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJT</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithKnowledge_179WU000001FAJT</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJT</fullName>
+            <description>Answers questions about how to use Salesforce products with salesforce documentation. For example: “How do I create a permission set?”. This action is automatically invoked if no other actions are available for the utterance.</description>
+            <developerName>AnswerQuestionsWithSalesforceDocumentation_179WU000001FAJT</developerName>
+            <invocationTarget>answerQuestionsWithSalesforceDocumentation</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithSalesforceDocumentation</localDeveloperName>
+            <masterLabel>Answer Questions with Salesforce Documentation (Beta)</masterLabel>
+            <progressIndicatorMessage>Searching Salesforce Documentation</progressIndicatorMessage>
+            <source>AdminCopilot__AnswerQuestionsWithSalesforceDocumentation</source>
+        </localActions>
+        <localActions>
+            <fullName>AnswerQuestionsWithKnowledge_179WU000001FAJT</fullName>
+            <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+            <developerName>AnswerQuestionsWithKnowledge_179WU000001FAJT</developerName>
+            <invocationTarget>streamKnowledgeSearch</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+            <masterLabel>Answer Questions with Knowledge</masterLabel>
+            <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+            <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+        </localActions>
+        <localDeveloperName>p_16jWU0000013VgD_Feature_Usage_Assistance</localDeveloperName>
+        <masterLabel>Feature Usage Assistance</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to only explain how to use product features effectively. You are not responsible for addressing unrelated issues or performing configurations.</scope>
+    </localTopics>
+    <localTopics>
+        <fullName>p_16jWU0000013VgD_Product_Issue_Identification_16jWU0000013VgD</fullName>
+        <canEscalate>false</canEscalate>
+        <description>Use this topic when users need help identifying specific issues with a product, such as functionality problems or unexpected behavior.</description>
+        <developerName>p_16jWU0000013VgD_Product_Issue_Identification_16jWU0000013VgD</developerName>
+        <genAiPluginInstructions>
+            <description>If the user describes an issue with a product, use &apos;SvcCopilotTmpl__IdentifyCustomerByEmail&apos; to identify the customer by their email address.</description>
+            <developerName>instruction_0</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>instruction_0</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <genAiPluginInstructions>
+            <description>Once the customer is identified, use &apos;SvcCopilotTmpl__GetAllCasesForContact&apos; to retrieve a list of cases related to the contact.</description>
+            <developerName>instruction_1</developerName>
+            <language xsi:nil="true"/>
+            <masterLabel>instruction_1</masterLabel>
+            <sortOrder>0</sortOrder>
+        </genAiPluginInstructions>
+        <language>en_US</language>
+        <localActionLinks>
+            <functionName>IdentifyCustomerByEmail_179WU000001FAJR</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>GetAllCasesForContact_179WU000001FAJR</functionName>
+        </localActionLinks>
+        <localActionLinks>
+            <functionName>AnswerQuestionsWithKnowledge_179WU000001FAJR</functionName>
+        </localActionLinks>
+        <localActions>
+            <fullName>AnswerQuestionsWithKnowledge_179WU000001FAJR</fullName>
+            <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+            <developerName>AnswerQuestionsWithKnowledge_179WU000001FAJR</developerName>
+            <invocationTarget>streamKnowledgeSearch</invocationTarget>
+            <invocationTargetType>standardInvocableAction</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+            <masterLabel>Answer Questions with Knowledge</masterLabel>
+            <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+            <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+        </localActions>
+        <localActions>
+            <fullName>GetAllCasesForContact_179WU000001FAJR</fullName>
+            <description>Returns a list of cases related to a given Contact record.</description>
+            <developerName>GetAllCasesForContact_179WU000001FAJR</developerName>
+            <invocationTarget>SvcCopilotTmpl__GetCasesForContact</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>GetAllCasesForContact</localDeveloperName>
+            <masterLabel>Get All Cases For Contact</masterLabel>
+            <source>SvcCopilotTmpl__GetAllCasesForContact</source>
+        </localActions>
+        <localActions>
+            <fullName>IdentifyCustomerByEmail_179WU000001FAJR</fullName>
+            <description>Identify a customer by their email address and return their contact record.</description>
+            <developerName>IdentifyCustomerByEmail_179WU000001FAJR</developerName>
+            <invocationTarget>SvcCopilotTmpl__IdentifyCustomer</invocationTarget>
+            <invocationTargetType>flow</invocationTargetType>
+            <isConfirmationRequired>false</isConfirmationRequired>
+            <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+            <localDeveloperName>IdentifyCustomerByEmail</localDeveloperName>
+            <masterLabel>Identify Customer By Email</masterLabel>
+            <source>SvcCopilotTmpl__IdentifyCustomerByEmail</source>
+        </localActions>
+        <localDeveloperName>p_16jWU0000013VgD_Product_Issue_Identification</localDeveloperName>
+        <masterLabel>Product Issue Identification</masterLabel>
+        <pluginType>Topic</pluginType>
+        <scope>Your job is to only assist users in identifying specific product issues they are experiencing. This includes gathering details about the issue and confirming the problem. You are not responsible for resolving the issue directly.</scope>
+    </localTopics>
+    <masterLabel>Support Agent</masterLabel>
+    <plannerActions>
+        <fullName>AnswerQuestionsWithKnowledge_16jWU0000013VgD</fullName>
+        <description>Answers questions about company policies and procedures, troubleshooting steps, or product information. For example: “What is your return policy?” “How do I fix an issue?” or “What features does a product have?”</description>
+        <developerName>AnswerQuestionsWithKnowledge_16jWU0000013VgD</developerName>
+        <invocationTarget>streamKnowledgeSearch</invocationTarget>
+        <invocationTargetType>standardInvocableAction</invocationTargetType>
+        <isConfirmationRequired>false</isConfirmationRequired>
+        <isIncludeInProgressIndicator>true</isIncludeInProgressIndicator>
+        <localDeveloperName>AnswerQuestionsWithKnowledge</localDeveloperName>
+        <masterLabel>Answer Questions with Knowledge</masterLabel>
+        <progressIndicatorMessage>Getting answers</progressIndicatorMessage>
+        <source>EmployeeCopilot__AnswerQuestionsWithKnowledge</source>
+    </plannerActions>
+    <plannerSurfaces>
+        <adaptiveResponseAllowed>true</adaptiveResponseAllowed>
+        <callRecordingAllowed>false</callRecordingAllowed>
+        <surface>SurfaceAction__Messaging</surface>
+        <surfaceType>Messaging</surfaceType>
+    </plannerSurfaces>
+    <plannerSurfaces>
+        <adaptiveResponseAllowed>true</adaptiveResponseAllowed>
+        <callRecordingAllowed>false</callRecordingAllowed>
+        <surface>SurfaceAction__CustomerWebClient</surface>
+        <surfaceType>CustomerWebClient</surfaceType>
+    </plannerSurfaces>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlannerBundle>

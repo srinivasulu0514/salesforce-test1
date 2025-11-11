@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Provides user access to Einstein AI-Generated Search Answers.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Einstein AI-Generated Search Answers</label>
+    <license>EinsteinGPTSearchAnswersPsl</license>
+</PermissionSet>

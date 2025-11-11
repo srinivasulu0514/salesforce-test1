@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlannerBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>With the Product Specialist agent, users can log a product gap for features and products that aren’t available or look up an existing product gap case record.</description>
+    <genAiFunctions>
+        <genAiFunctionName>EmployeeCopilot__AnswerQuestionsWithKnowledge</genAiFunctionName>
+    </genAiFunctions>
+    <genAiPlugins>
+        <genAiPluginName>Product_Gaps</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>SvcCopilotTmpl__AccountManagement</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>SvcCopilotTmpl__CaseManagement</genAiPluginName>
+    </genAiPlugins>
+    <genAiPlugins>
+        <genAiPluginName>SvcCopilotTmpl__Escalation</genAiPluginName>
+    </genAiPlugins>
+    <masterLabel>TH Product Specialist</masterLabel>
+    <plannerType>AiCopilot__ReAct</plannerType>
+</GenAiPlannerBundle>
