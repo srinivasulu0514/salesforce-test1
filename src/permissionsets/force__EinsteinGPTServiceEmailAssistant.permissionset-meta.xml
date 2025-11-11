@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Use Service Email Assistant features to write emails with Einstein.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Einstein Service Email Assistant User</label>
+    <license>EinsteinGPTServiceEmailAssistantPsl</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>EGPTServiceEmailUser</name>
+    </userPermissions>
+</PermissionSet>
