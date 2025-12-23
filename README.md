@@ -5,5 +5,5 @@
 
 - **Vasu**
 - *Vasu*
- - ~~Vasu~~
-`Hello World`
+  - ~~Vasu~~
+- `Hello World`
