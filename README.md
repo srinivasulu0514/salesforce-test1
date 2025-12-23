@@ -11,13 +11,10 @@
 > This is a blockquote
 
 - [x] Git
+- [ ] Git2
+
+
 [Github](https:)
-
-```bash
-git clone https://github.com/user/repo.git
-git status
-
-
 
 <details>
 <summary>Click to expand</summary>
@@ -25,3 +22,10 @@ git status
 Hidden content here
 
 </details>
+
+
+
+```bash
+git clone https://github.com/user/repo.git
+git status
+
