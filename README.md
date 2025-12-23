@@ -7,3 +7,5 @@
 - *Vasu*
   - ~~Vasu~~
 - `Hello World`
+
+- [x] Git
