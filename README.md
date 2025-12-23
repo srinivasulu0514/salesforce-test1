@@ -4,7 +4,7 @@
 ### Vasu
 
 - **Vasu**
-- *Vasu*
+- `~~***Vasu***~~`
   - ~~Vasu~~
 - `Hello World`
 
