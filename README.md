@@ -10,3 +10,7 @@
 
 - [x] Git
 [Github](https:)
+
+```bash
+git clone https://github.com/user/repo.git
+git status
