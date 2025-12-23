@@ -2,3 +2,8 @@
 # salesforce-test1
 ## Vasu
 ### Vasu
+
+**Vasu**
+*Vasu*
+~~Vasu~~
+`Hello World`
