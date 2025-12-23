@@ -16,3 +16,12 @@
 ```bash
 git clone https://github.com/user/repo.git
 git status
+
+
+
+<details>
+<summary>Click to expand</summary>
+
+Hidden content here
+
+</details>
