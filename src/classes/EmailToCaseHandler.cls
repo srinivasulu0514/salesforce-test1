@@ -12,7 +12,7 @@ global class EmailToCaseHandler implements Messaging.InboundEmailHandler {
             Case newCase = new Case(
                 Subject = subject,
                 Description = body,
-                Origin = 'Email',
+                Origin = 'Emalllil',
                 Status = 'New'
             );
             insert newCase;
