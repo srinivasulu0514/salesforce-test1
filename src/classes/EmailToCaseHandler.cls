@@ -12,7 +12,7 @@ global class EmailToCaseHandler implements Messaging.InboundEmailHandler {
             Case newCase = new Case(
                 Subject = subject,
                 Description = body,
-                Origin = 'Email',
+                Origin = 'Emalllil',
                 Status = 'New'
             );
             insert newCase;
@@ -21,7 +21,7 @@ global class EmailToCaseHandler implements Messaging.InboundEmailHandler {
             result.success = true;
         } catch (Exception e) {
             System.debug('Error: ' + e.getMessage());
-            result.success = truw;
+            result.success = false;
         }
         
         return result;

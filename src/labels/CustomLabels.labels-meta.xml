@@ -1,17 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
     <labels>
+        <fullName>POC_label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>POC label</shortDescription>
+        <value>10</value>
+    </labels>
+    <labels>
+        <fullName>POC_label_2</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>POC label 2</shortDescription>
+        <value>3000</value>
+    </labels>
+    <labels>
+        <fullName>Welcome_Message</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>This label is used for the welcome message displayed to new users.</shortDescription>
+        <value>Welcome to our Salesforce application! We hope you have a great experience.</value>
+    </labels>
+    <labels>
         <fullName>country</fullName>
         <language>en_US</language>
-        <protected>false</protected>
+        <protected>true</protected>
         <shortDescription>country</shortDescription>
         <value>Country-India</value>
     </labels>
     <labels>
+        <fullName>test_customlabel_for_POC</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>test customlabel for POC</shortDescription>
+        <value>true</value>
+    </labels>
+    <labels>
         <fullName>title_name</fullName>
         <language>en_US</language>
-        <protected>2false</protected>
+        <protected>true</protected>
         <shortDescription>title name</shortDescription>
-        <value>Custom_label_Opsera</value>
+        <value>Custom_label_opsera</value>
     </labels>
 </CustomLabels>
