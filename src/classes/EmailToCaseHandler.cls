@@ -1,6 +1,6 @@
 global class EmailToCaseHandler implements Messaging.InboundEmailHandler {
     global Messaging.InboundEmailResult handleInboundEmail(Messaging.InboundEmail email, Messaging.InboundEnvelope envelope) {
-        // Create a new InboundEmailResult object
+        // Create a new InboundEmailResult objectsssssssssss
         Messaging.InboundEmailResult result = new Messaging.InboundEmailResult();
         
         try {
