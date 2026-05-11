@@ -1,6 +1,6 @@
 global class EmailToCaseHandler implements Messaging.InboundEmailHandler {
     global Messaging.InboundEmailResult handleInboundEmail(Messaging.InboundEmail email, Messaging.InboundEnvelope envelope) {
-        // Create a new InboundEmailResult object
+        // Create a new InboundEmailResult objectsssssssssss
         Messaging.InboundEmailResult result = new Messaging.InboundEmailResult();
         
         try {
@@ -21,7 +21,7 @@ global class EmailToCaseHandler implements Messaging.InboundEmailHandler {
             result.success = true;
         } catch (Exception e) {
             System.debug('Error: ' + e.getMessage());
-            result.success = false;
+            result.success = truw;
         }
         
         return result;
